@@ -35,24 +35,25 @@ play.
 GSC but is directly built into the game executable. We cannot easily put our\
 hands on it and that wouldn't be in accordance with the [Plutonium cheat policy](https://plutonium.pw/docs/anticheat/).
 
-## Fix implementation
+## Dumping & hardcoding
 
-This fix is composed solely of GSC files.
+The GSC files of the `vox_defs` folders have been generated with the help of the\
+two following scripts:
 
-### Dumping & hardcoding
-
-[zm_vox_dumper.gsc](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/dumper/scripts/sp/zom/zm_vox_dumper.gsc) retrieves and prints all voicelines names and their number of\
-variants in a pre-formatted GSC syntax to the Plutonium console. The number of\
-variants is obtained by calling `get_number_variants`, on each map, for each\
+- [zm_vox_dumper.gsc](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/dumper/scripts/sp/zom/zm_vox_dumper.gsc): retrieves and prints all voicelines names and their number\
+of variants in a pre-formatted GSC syntax to the Plutonium console. The number\
+of variants is obtained by calling `get_number_variants`, on each map, for each\
 voiceline.
 
-[dump_helper.py](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/dumper/dump_helper.py) parses the console output text file (that you have to export\
+- [dump_helper.py](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/dumper/dump_helper.py): parses the console output text file (that you have to export\
 somehow) and generates all the GSC files with hardcoded arrays in a dedicated\
 folder for each map.
 
-### Loading
+## Loading
 
-[zm_vox_fix.gsc](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/fix_main/scripts/sp/zom/zm_vox_fix.gsc) loads the hardcoded voicelines arrays and assigns them properly\
+The core of the fix resides in the following script:
+
+- [zm_vox_fix.gsc](https://github.com/Nahelam/t5sp-voicelines-fix/blob/main/fix_main/scripts/sp/zom/zm_vox_fix.gsc): loads the hardcoded voicelines arrays and assigns them properly\
 to the players. One array is dedicated to George (Call of the Dead) because his\
 voicelines were also affected by the sound issue.
 
