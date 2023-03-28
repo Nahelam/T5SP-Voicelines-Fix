@@ -49,6 +49,8 @@ voiceline.
 somehow) and generates all the GSC files with hardcoded arrays in a dedicated\
 folder for each map.
 
+If you want to try this process yourself, take a look [here](https://github.com/Nahelam/T5SP-Voicelines-Fix/tree/main/dumper).
+
 ## Loading
 
 The core of the fix resides in the following script:
