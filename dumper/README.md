@@ -2,7 +2,7 @@
 
 ## Usage
 
-Extract the dumper ZIP archive content to the T5 storage folder (for the Python\
+Extract the [dumper ZIP archive](https://github.com/Nahelam/T5SP-Voicelines-Fix/releases/download/1.0/t5sp-voicelines-dumper-1.0.zip) content to the T5 storage folder (for the Python\
 script you can put it where you want) then run a solo game on *Kino der Toten*\
 (the dumper **MUST** be ran on Kino first if you want to get a proper output for\
 all maps in the Plutonium console) and let it do its thing.
