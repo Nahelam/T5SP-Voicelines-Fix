@@ -31,9 +31,9 @@ returns 0 and the [GSC function in charge of handling voicelines](https://github
 immediately without doing anything because it thinks there are no variants to\
 play.
 
-`SoundExists` is a *built-in* function, which means its source code isn't written in\
-GSC but is directly built into the game executable. We cannot easily put our\
-hands on it and that wouldn't be in accordance with the [Plutonium cheat policy](https://plutonium.pw/docs/anticheat/).
+`SoundExists` is a built-in function, which means its source code isn't written\
+in GSC but is directly built into the game executable thus we cannot easily put\
+our hands on it.
 
 ## Dumping & hardcoding
 
