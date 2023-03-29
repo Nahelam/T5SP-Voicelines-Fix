@@ -72,7 +72,7 @@ setup_director_sound_dialog_array()
 {
     level.director_sound_dialog = [];
 
-    keys =  GetArrayKeys(level.dvox);
+    keys = GetArrayKeys(level.dvox);
     for (i = 0; i < keys.size; i++)
     {
         level.director_sound_dialog[keys[i]] = [];
