@@ -18,6 +18,8 @@ init()
 assign_director_sound_dialog_array()
 {
     self.sound_dialog = level.director_sound_dialog;
+    self.sound_dialog_available = self.sound_dialog;
+
     self [[level._director_zombie_enter_level]]();
 }
 
@@ -38,9 +40,6 @@ assign_player_sound_dialog_array()
     {
         wait 0.05;
     }
-
-    self.sound_dialog = [];
-    self.sound_dialog_available = [];
 
     self.sound_dialog = level.players_sound_dialog[self.entity_num];
     self.sound_dialog_available = self.sound_dialog;
